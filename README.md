@@ -29,9 +29,15 @@
 	* STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 	* STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-6. Create Heroku app
+6. Create and connet Heroku app
 
 7. Add Heroku URL to settings.py file
 
 	* Add the Heorku domain to the ALLOWED_HOSTS list in settings.py
 	* Copy and paste everything except the https://
+	* Push changes to GitHub
+	
+8. Deploy Heroku:
+	* Click deploy
+	* $ heroku login
+	* $ heroku run python manage.py migrate -a <Heroku app name>
