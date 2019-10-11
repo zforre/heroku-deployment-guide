@@ -13,8 +13,9 @@
 * gunicorn is a production suitable web server
 * $ pipenv install gunicorn==19.9.0
 * update your Procfile
-	* web: gunicorn <project_name>.wsgi --log-file -
-	* <project_name> should be the name of your project, e.g. conf
+	* release: python manage.py migrate --noinput
+	* web: gunicorn <ENTER PROJECT NAME>.wsgi --log-file -
+	* <ENTER PROJECT NAME> should be the name of your project, e.g. conf
 	* server configuration is contained in the wsgi.py file
 
 4. Install whitenoise
