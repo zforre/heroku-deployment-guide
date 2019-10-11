@@ -14,8 +14,8 @@
 * $ pipenv install gunicorn==19.9.0
 * update your Procfile
 	* release: python manage.py migrate --noinput
-	* web: gunicorn <ENTER PROJECT NAME>.wsgi --log-file -
-	* <ENTER PROJECT NAME> should be the name of your project, e.g. conf
+	* web: gunicorn conf.wsgi --log-file -
+	* conf is the name of the project, change it if you named your project directory something different
 	* server configuration is contained in the wsgi.py file
 
 4. Install whitenoise
