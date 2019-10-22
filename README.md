@@ -13,7 +13,6 @@
 * gunicorn is a production suitable web server
 * $ pipenv install gunicorn==19.9.0
 * update your Procfile
-	* release: python manage.py migrate --noinput
 	* web: gunicorn conf.wsgi --log-file -
 	* conf is the name of the project, change it if you named your project directory something different
 	* server configuration is contained in the wsgi.py file
